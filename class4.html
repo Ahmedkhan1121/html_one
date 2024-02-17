@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // var myMonth = ['Jan','Feb','mar','Apr','May','June','July'];
+        // console.log(myMonth.length);
+        // var myType = [1,'s',true,undefined,null]
+        // console.log(myType)
+        var myFruits = ['Apple','Banana','Orange','Kiwi','Mango']; //Array is a group of element
+        myFruits.pop(); //remove from end of array
+        console.log(myFruits);
+        myFruits.push('bat','ball'); //add from end of array
+        console.log(myFruits);
+        myFruits.shift(); //remove from start of array
+        console.log(myFruits);
+        myFruits.unshift('kit') //add from start of array
+        console.log(myFruits); 
+        var newFruits = myFruits.slice(1,4); //copy of array
+        console.log(newFruits);
+        var days = ['mon','tue','wed','thu','fri','sat','sun'];
+        console.log(days);
+        days.splice(1,1,'T','W'); // remove add from the array
+        console.log(days);
+
+        // FOR LOOP
+        for(var i=1; i<=100; i++){
+            console.log(i)
+        }
+        var forArr = ['Apple','Banana','Orange','Kiwi'];
+        // console.log(forArr);
+        // for(let i=0; i<forArr.length; i++){
+            // console.log(forArr[i]);
+        // }
+        var mtch = 'no';
+        var fruit = 'Apple';
+        for(let i=0; i<4; i++){
+            if(fruit === forArr[0]){
+                mtch = 'yes';
+                console.log(mtch);
+                break;
+            }
+        } 
+        if(mtch === 'no'){
+            console.log('Not Found');
+        }
+        var lower = 'ApPLE';
+        console.log(lower.toLowerCase())
+        console.log(lower.toUpperCase());
+
+        
+
+    </script>
+</body>
+</html>
